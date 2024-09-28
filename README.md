@@ -37,3 +37,35 @@ game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/site.html) in
  ```
 
 </details>
+
+<details>
+  <summary>spectral norm</summary>
+
+  ```sh
+  $ time bqn -f spectral_norm.bqn 500
+  1.2742241159529217
+  
+  real    0m0.052s
+  user    0m0.045s
+  sys     0m0.000s
+  ```
+  
+  ```sh
+  $ time bqn -f spectral_norm.bqn 3000
+  1.274224152646423
+  
+  real    0m2.521s
+  user    0m2.488s
+  sys     0m0.061s
+  ```
+
+  ```sh
+  $ time bqn -f spectral_norm.bqn 5500
+  1.2742241527978682
+  
+  real    0m8.771s
+  user    0m8.658s
+  sys     0m0.060s
+  ```
+
+</details>
